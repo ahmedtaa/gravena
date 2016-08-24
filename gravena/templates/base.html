@@ -25,6 +25,8 @@
     {% endcompress %}
     {% endblock %}
 
+    {% block custom_css %}
+    {% endblock %}
   </head>
 
   <body>
@@ -41,20 +43,26 @@
           <div class="collapse navbar-toggleable-xs" id="bs-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">Home</a>
+                <a class="nav-link" href="{% url 'sanitary_ware' %}">sanitary ware</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">About</a>
+                <a class="nav-link" href="{% url 'acrylic_bathtubs' %}">acrylic bathtubs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'water_taps' %}">water taps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'additional_items' %}">additional items</a>
               </li>
             </ul>
 
             <ul class="nav navbar-nav pull-xs-right">
               {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link" href="#">{% trans "My Profile" %}</a>
+                  <!-- <a class="nav-link" href="#">{% trans "My Profile" %}</a> -->
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">{% trans "Sign out" %}</a>
+                  <!-- <a class="nav-link" href="#">{% trans "Sign out" %}</a> -->
                 </li>
               {% else %}
                 <li class="nav-item">

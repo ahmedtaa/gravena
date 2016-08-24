@@ -10,7 +10,10 @@ from django.views import defaults as default_views
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
-    url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
+    url(r'^sanitary_ware/$', TemplateView.as_view(template_name='pages/sanitary_ware.html'), name='sanitary_ware'),
+    url(r'^acrylic_bathtubs/$', TemplateView.as_view(template_name='pages/acrylic_bathtubs.html'), name='acrylic_bathtubs'),
+    url(r'^water_taps/$', TemplateView.as_view(template_name='pages/water_taps.html'), name='water_taps'),
+    url(r'^additional_items/$', TemplateView.as_view(template_name='pages/additional_items.html'), name='additional_items'),
 
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
