@@ -5,6 +5,14 @@
 		//Variables//
 ////////////////////////////////
 
+
+.borderInspect{
+  border: 1px solid cyan;
+}
+body{
+  background-color: #636363 !important;
+}
+
 // Alert colors
 
 $white: #fff;
@@ -39,26 +47,25 @@ $red: #b94a48;
 
 // This is a fix for the bootstrap4 alpha release
 
-.navbar {
-  border-radius: 0px;
-  background-color: red;
-}
+// .navbar {
+//   border-radius: 0px;
+// }
 
-@media (max-width: 47.9em) {
-  .navbar-nav .nav-item {
-    display: inline-block;
-    float: none;
-    width: 100%;
-  }
+// @media (max-width: 47.9em) {
+//   .navbar-nav .nav-item {
+//     display: inline-block;
+//     float: none;
+//     width: 100%;
+//   }
 
-  .navbar-nav .nav-item + .nav-item {
-    margin-left: 0;
-  }
+//   .navbar-nav .nav-item + .nav-item {
+//     margin-left: 0;
+//   }
 
-  .nav.navbar-nav.pull-xs-right {
-    float: none !important;
-  }
-}
+//   .nav.navbar-nav.pull-xs-right {
+//     float: none !important;
+//   }
+// }
 
 ////////////////////////////////
 		//Django Toolbar//
@@ -71,5 +78,8 @@ $red: #b94a48;
 [hidden][style="display: block;"] {
   display: block !important;
 }
+
+
+@import 'mainNav';
 
 
