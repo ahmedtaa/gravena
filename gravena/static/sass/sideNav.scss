@@ -1,0 +1,42 @@
+$side-nav-width: 20%;
+$side-nav-container-width: 90%;
+$side-nav-translate: 85%;
+$side-nav-hover-width: 100 - $side-nav-translate: 85%;
+
+#side-nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: $side-nav-width;
+	background-color: whitesmoke;
+	transform: translate(-$side-nav-translate, 0);
+	transition: transform 1s;
+	-webkit-transition: transform 1s; /* Safari */
+	z-index: 10;
+	.side-nav-container{
+		overflow-y: scroll;
+		width: $side-nav-container-width;
+		height: 100%;
+		// margin-right: 10px;
+		background-color: #5F9DCC;
+		.side-nav-content{
+			height: inherit;
+			.side-nav-item{
+				height: 150px;
+				margin-bottom: 10px;
+				cursor: pointer;
+				background-color: #CC2E9F;
+			}
+		}
+	}
+	.side-nav-hover{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: $side-nav-hover-width;
+		height: 100%;
+		cursor: pointer;
+		background-color: #3CCC7A;
+	}
+}

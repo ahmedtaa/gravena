@@ -55,3 +55,36 @@ body {
     margin-left: 0; }
   .nav.navbar-nav.pull-xs-right {
     float: none !important; } }
+
+#side-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: whitesmoke;
+  transform: translate(-85%, 0);
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  /* Safari */
+  z-index: 10; }
+  #side-nav .side-nav-container {
+    overflow-y: scroll;
+    width: 84%;
+    height: 100%;
+    background-color: #5F9DCC; }
+    #side-nav .side-nav-container .side-nav-content {
+      height: inherit; }
+      #side-nav .side-nav-container .side-nav-content .side-nav-item {
+        height: 150px;
+        margin-bottom: 10px;
+        background-color: #CC2E9F; }
+  #side-nav .side-nav-hover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #3CCC7A; }
+  #side-nav .side-nav-hover:hover {
+    background-color: red; }
