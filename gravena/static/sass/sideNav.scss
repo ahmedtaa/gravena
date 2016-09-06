@@ -1,7 +1,7 @@
 $side-nav-width: 20%;
 $side-nav-container-width: 90%;
-$side-nav-translate: 85%;
-$side-nav-hover-width: 100 - $side-nav-translate: 85%;
+$side-nav-hover-width: 100 - $side-nav-container-width;
+$side-nav-translate: 100% - $side-nav-hover-width;
 
 #side-nav{
 	position: absolute;
@@ -28,7 +28,7 @@ $side-nav-hover-width: 100 - $side-nav-translate: 85%;
 				cursor: pointer;
 				background-color: #CC2E9F;
 			}
-		}
+		} 
 	}
 	.side-nav-hover{
 		position: absolute;
@@ -39,4 +39,5 @@ $side-nav-hover-width: 100 - $side-nav-translate: 85%;
 		cursor: pointer;
 		background-color: #3CCC7A;
 	}
+
 }
