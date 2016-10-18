@@ -1,11 +1,17 @@
 <!-- Full Page Image Background Carousel Header -->
 <div id="fullPageCarousel">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-        <!-- Indicators -->
+    <!-- Indicators -->
     <nav id="side-nav" class="container borderInspect">
+
       <div class="side-nav-container">
         <div class="side-nav-content borderInspect">
-          <div class="col-xs-12 side-nav-item borderInspect" data-target="#myCarousel" data-slide-to="0" class="active"><h2>Slide 1</h2></div>
+          <div class="col-xs-12 side-nav-item borderInspect" 
+               data-target="#myCarousel" 
+               data-slide-to="0" 
+               class="active">
+                <h2>Slide 1</h2>
+          </div>
           <div class="col-xs-12 side-nav-item borderInspect" data-target="#myCarousel" data-slide-to="1"><h2>Slide 2</h2></div>
           <div class="col-xs-12 side-nav-item borderInspect" data-target="#myCarousel" data-slide-to="2"><h2>Slide 3</h2></div>
           <div class="col-xs-12 side-nav-item borderInspect" data-target="#myCarousel" data-slide-to="3"><h2>Slide 4</h2></div>
@@ -18,94 +24,30 @@
           <!-- <div class="col-xs-12 side-nav-item borderInspect" data-target="#myCarousel" data-slide-to="10"><h2>Slide 11</h2></div> -->
         </div>
       </div>
-
       <div class="side-nav-hover"></div>
-
     </nav>
+
         <!-- <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol> -->
+          </ol> -->
 
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 1');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 2');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 3');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 4');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 4</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 5');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 5</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 6');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 6</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 7');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 7</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 8');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 8</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide 9');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 9</h2>
-                </div>
-            </div>
-        </div>
 
-        <!-- Controls -->
+          <!-- Wrapper for Slides -->
+        {% include 'pages/carousel.html' %}
+    
+
+          <!-- Controls -->
         <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a> -->
-
-    </div>
+  </div>
 </div>
-    
+
 
 
 

@@ -1,0 +1,58 @@
+.discreption-row{
+  position: relative;
+  top: 250px;
+  color: rgb(255, 255, 255);
+
+  .discreption-col{
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+  }
+
+}
+
+.modal-row{
+  position: relative;
+  bottom: 150px;
+}
+
+#animatedModal{
+  // z-index: 19;
+  background-color: rgba(0, 0, 0, .4) !important;
+
+  .close-animatedModal{
+    margin-top: 30px;
+    right: 50px;
+    border: 1px solid red;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer;
+
+
+
+    span{
+      line-height: 40px;
+    }
+  }
+
+  .modal-content{
+    // z-index: 20;
+    background-color: rgba(0, 0, 0, 0);
+
+    .row-container {
+      background-color: rgba(0, 0, 0, 0);
+
+      div{
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  h2{
+    height: 150px;
+  }
+
+}
+

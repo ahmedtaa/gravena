@@ -1,4 +1,4 @@
-$side-nav-width: 300px;
+$side-nav-width: 250px;
 $side-nav-click-width: $side-nav-width / 8;
 $side-nav-translate: $side-nav-width - $side-nav-click-width;
 $side-nav-container-width: $side-nav-width - $side-nav-click-width * 2;
@@ -22,6 +22,7 @@ $side-nav-container-width: $side-nav-width - $side-nav-click-width * 2;
 	// transform: translate(0, 0);
 	transition: transform 1s;
 	-webkit-transition: transform 1s; /* Safari */
+	-webkit-animation-duration: 5s;
 
 	.side-nav-container{
 		overflow-y: scroll;
