@@ -1,7 +1,15 @@
-$side-nav-width: 20%;
-$side-nav-container-width: 90%;
-$side-nav-hover-width: 100 - $side-nav-container-width;
-$side-nav-translate: 100% - $side-nav-hover-width;
+$side-nav-width: 300px;
+$side-nav-click-width: $side-nav-width / 8;
+$side-nav-translate: $side-nav-width - $side-nav-click-width;
+$side-nav-container-width: $side-nav-width - $side-nav-click-width * 2;
+
+
+
+.side-nav-translate{
+	transform: translate(-$side-nav-translate, 0);
+	transition: transform 1s;
+	-webkit-transition: transform 1s; /* Safari */
+}
 
 #side-nav{
 	position: absolute;
@@ -10,31 +18,37 @@ $side-nav-translate: 100% - $side-nav-hover-width;
 	height: 100%;
 	width: $side-nav-width;
 	background-color: whitesmoke;
-	transform: translate(-$side-nav-translate, 0);
+	z-index: 10;
+	// transform: translate(0, 0);
 	transition: transform 1s;
 	-webkit-transition: transform 1s; /* Safari */
-	z-index: 10;
+
 	.side-nav-container{
 		overflow-y: scroll;
 		width: $side-nav-container-width;
 		height: 100%;
 		// margin-right: 10px;
 		background-color: #5F9DCC;
+
 		.side-nav-content{
 			height: inherit;
+
 			.side-nav-item{
 				height: 150px;
 				margin-bottom: 10px;
 				cursor: pointer;
 				background-color: #CC2E9F;
 			}
-		} 
+
+		}
+
 	}
+
 	.side-nav-hover{
 		position: absolute;
 		right: 0;
 		top: 0;
-		width: $side-nav-hover-width;
+		width: $side-nav-click-width;
 		height: 100%;
 		cursor: pointer;
 		background-color: #3CCC7A;

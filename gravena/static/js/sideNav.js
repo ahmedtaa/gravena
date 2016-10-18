@@ -1,13 +1,11 @@
 $(function(){
-	$('.side-nav-hover').hover(function(){
-		$('#side-nav').css('transform', 'translate(0, 0)');
-		// $(this).css('background-color', 'red');
-	})
+  var side_nav = $('#side-nav');
+  var side_nav_hover = $('.side-nav-hover');
+  var side_nav_translate = parseInt($('.side-nav-container').innerWidth()) + 'px';
 
-	var side_nav_container_width = $('.side-nav-container').innerWidth();
-	console.log(side_nav_container_width);
-
-	$('#side-nav').mouseleave(function(){
-		$(this).css('transform', 'translate(-90%, 0)');
-	})
+  
+  side_nav_hover.click(function(){
+    side_nav.toggleClass( 'side-nav-translate' );
+  });
+  
 });

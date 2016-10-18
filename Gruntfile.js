@@ -110,7 +110,7 @@ module.exports = function (grunt) {
         bg: true
       },
       runDjango: {
-        cmd: 'python <%= paths.manageScript %> runserver'
+        cmd: 'python3 <%= paths.manageScript %> runserver'
       },
       
     }
