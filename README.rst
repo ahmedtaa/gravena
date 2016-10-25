@@ -1,11 +1,11 @@
 # yossry add how to setup  #
 ===================================================
 
-# gravena #
+gravena
 ==============================
 
-# Gravena website
- #
+Gravena website
+
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
      :alt: Built with Cookiecutter Django
@@ -19,8 +19,8 @@ Moved to settings_.
 
 .. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
 
-# Basic Commands
- #--------------
+Basic Commands
+--------------
 
 * Install python 3 package manager::
 
@@ -49,19 +49,19 @@ You should see difference in your terminal
 
 * Migrate the DB::
 
-   * $ python3 manage.py migra#te.
+   $ python3 manage.py migrate.
    
 
 # Setting Up Your Users
- ^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
-* To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
+   * To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
 
-* To create an **superuser account**, use this command::
+   * To create an **superuser account**, use this command::
 
-    $ python manage.py createsuperuser
+       $ python manage.py createsuperuser
 
-For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
+   For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
 
 * install npm packages::
