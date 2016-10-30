@@ -5,16 +5,10 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
-urlpatterns = [
-    url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
-    url(r'^sanitary_ware/$', TemplateView.as_view(template_name='pages/sanitary_ware.html'), name='sanitary_ware'),
-    url(r'^acrylic_bathtubs/$', TemplateView.as_view(template_name='pages/acrylic_bathtubs.html'), name='acrylic_bathtubs'),
-    url(r'^water_taps/$', TemplateView.as_view(template_name='pages/water_taps.html'), name='water_taps'),
-    url(r'^additional_items/$', TemplateView.as_view(template_name='pages/additional_items.html'), name='additional_items'),
 
+urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
 
@@ -36,3 +30,7 @@ if settings.DEBUG:
         url(r'^404/$', default_views.page_not_found, kwargs={'exception': Exception('Page not Found')}),
         url(r'^500/$', default_views.server_error),
     ]
+
+urlpatterns += [
+    url(r'^', include('products.urls')),
+]

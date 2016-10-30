@@ -1,3 +1,9 @@
+.borderInspect {
+  border: 1px solid cyan; }
+
+body {
+  background-color: #636363 !important; }
+
 .alert-debug {
   background-color: #fff;
   border-color: #d6e9c6;
@@ -8,19 +14,120 @@
   border-color: #eed3d7;
   color: #b94a48; }
 
+[hidden][style="display: block;"] {
+  display: block !important; }
+
 .navbar {
-  border-radius: 0px;
-  background-color: red; }
+  top: 60px;
+  margin-left: 140px;
+  z-index: 1;
+  border-radius: 0px; }
+  .navbar .navbar-brand {
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+    text-align: center;
+    font-size: 2em; }
+  .navbar .nav-item {
+    height: 10em;
+    margin-right: 1em; }
+    .navbar .nav-item .nav-link {
+      height: 5em;
+      line-height: 5em;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      transition: color 1s; }
+      .navbar .nav-item .nav-link span {
+        display: block;
+        height: 1.5em;
+        line-height: 3em;
+        font-size: 2.5em; }
+    .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus {
+      color: white; }
 
 @media (max-width: 47.9em) {
   .navbar-nav .nav-item {
     display: inline-block;
     float: none;
     width: 100%; }
+  .nav-link {
+    width: 40px; }
   .navbar-nav .nav-item + .nav-item {
     margin-left: 0; }
   .nav.navbar-nav.pull-xs-right {
     float: none !important; } }
 
-[hidden][style="display: block;"] {
-  display: block !important; }
+.side-nav-translate {
+  transform: translate(-218.75px, 0);
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  /* Safari */ }
+
+#side-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: whitesmoke;
+  z-index: 10;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  /* Safari */
+  -webkit-animation-duration: 5s; }
+  #side-nav .side-nav-container {
+    overflow-y: scroll;
+    width: 187.5px;
+    height: 100%;
+    background-color: #5F9DCC; }
+    #side-nav .side-nav-container .side-nav-content {
+      height: inherit; }
+      #side-nav .side-nav-container .side-nav-content .side-nav-item {
+        height: 150px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background-color: #CC2E9F; }
+  #side-nav .side-nav-hover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 31.25px;
+    height: 100%;
+    cursor: pointer;
+    background-color: #3CCC7A; }
+
+.discreption-row {
+  position: relative;
+  top: 250px;
+  color: white; }
+  .discreption-row .discreption-col {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px; }
+
+.modal-row {
+  position: relative;
+  bottom: 150px; }
+
+#animatedModal {
+  background-color: rgba(0, 0, 0, 0.4) !important; }
+  #animatedModal .close-animatedModal {
+    margin-top: 30px;
+    right: 50px;
+    border: 1px solid red;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer; }
+    #animatedModal .close-animatedModal span {
+      line-height: 40px; }
+  #animatedModal .modal-content {
+    background-color: transparent; }
+    #animatedModal .modal-content .row-container {
+      background-color: transparent; }
+      #animatedModal .modal-content .row-container div {
+        background-color: white; }
+  #animatedModal h2 {
+    height: 150px; }
