@@ -8,7 +8,7 @@ def sanitary_ware(request):
     main_img = None
     model_name = ''
     model_description = ''
-    technical drawings = []
+    technical_drawings = []
     context = {'dada': 14}
     return render(request, 'pages/sanitary_ware.html', context)
 
