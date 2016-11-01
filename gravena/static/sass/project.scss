@@ -7,7 +7,7 @@
 
 
 .borderInspect{
-  border: 1px solid cyan;
+  // border: 1px solid cyan;
 }
 body{
   background-color: #636363 !important;
@@ -45,6 +45,10 @@ $red: #b94a48;
 [hidden][style="display: block;"] {
   display: block !important;
 }
+
+// project color
+$glassBG: rgba(0, 0, 0, .2);
+$glassBG-dark: rgba(0, 0, 0, .4);
 
 
 @import 'mainNav';
