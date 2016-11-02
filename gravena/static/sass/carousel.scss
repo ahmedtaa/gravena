@@ -13,13 +13,16 @@
 
     // border-radius: 10px;
     // height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 }
 
 .modal-row{
-  position: relative;
-  bottom: 150px;
+  position: absolute;
+  bottom: 10%;
+  width: 80%;
 }
 
 .tech-btn {
