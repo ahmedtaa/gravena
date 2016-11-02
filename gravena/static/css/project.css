@@ -1,5 +1,5 @@
 body {
-  background-color: #636363 !important; }
+  background-color: #404040 !important; }
 
 .alert-debug {
   background-color: #fff;
@@ -18,7 +18,7 @@ body {
   top: 60px;
   z-index: 1;
   border-radius: 0px;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.4); }
   .navbar .navbar-brand {
     width: 5em;
     height: 5em;
@@ -34,7 +34,8 @@ body {
       text-align: center;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.6);
-      transition: color 1s; }
+      transition: color 1s;
+      background-color: transparent; }
       .navbar .nav-item .nav-link span {
         display: block;
         height: 1.5em;
@@ -71,8 +72,7 @@ body {
   z-index: 10;
   transition: transform 1s;
   -webkit-transition: transform 1s;
-  /* Safari */
-  -webkit-animation-duration: 5s; }
+  /* Safari */ }
   #side-nav .side-nav-container {
     overflow-y: scroll;
     width: 187.5px;
@@ -110,32 +110,55 @@ body {
   top: 250px;
   color: white; }
   .discreption-row .discreption-col {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px; }
+    background: rgba(0, 0, 0, 0.2);
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    /* Standard syntax */
+    height: 200px; }
 
 .modal-row {
   position: relative;
   bottom: 150px; }
 
-#animatedModal {
-  background-color: rgba(0, 0, 0, 0.4) !important; }
-  #animatedModal .close-animatedModal {
-    margin-top: 30px;
-    right: 50px;
-    border: 1px solid red;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+.tech-btn {
+  color: white;
+  background-color: rgba(58, 58, 58, 0.5);
+  border-radius: 0;
+  border: none;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  /* Safari */ }
+
+.tech-btn:focus, .tech-btn:hover, .tech-btn:visited, .tech-btn:active {
+  color: white;
+  background-color: rgba(58, 58, 58, 0.3); }
+
+.items-row {
+  margin-top: 40px; }
+  .items-row .item-col {
+    height: 400px;
     text-align: center;
-    margin-right: 20px;
-    cursor: pointer; }
-    #animatedModal .close-animatedModal span {
-      line-height: 40px; }
-  #animatedModal .modal-content {
-    background-color: transparent; }
-    #animatedModal .modal-content .row-container {
-      background-color: transparent; }
-      #animatedModal .modal-content .row-container div {
-        background-color: white; }
-  #animatedModal h2 {
-    height: 150px; }
+    line-height: 700px; }
+    .items-row .item-col .item-botton {
+      background-color: black;
+      width: 300px;
+      height: 300px;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      opacity: .6;
+      -webkit-transition: opacity 1s;
+      /* Safari */
+      transition: opacity 1s; }
+    .items-row .item-col .item-botton:hover {
+      opacity: 1; }
+    .items-row .item-col .product-description {
+      text-align: left;
+      margin-top: 10px;
+      color: white; }

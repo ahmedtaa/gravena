@@ -76,11 +76,12 @@
       {% endif %}
 
       {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
+        <!-- <p>Use this document as a way to quick start any new project.</p> -->
       {% endblock content %}
 
       {% block sideNav %}
       {% endblock sideNav %}
+
       {% include 'pages/modal.html' %}
 
     </div> <!-- /container -->
@@ -103,10 +104,6 @@
       {% compress js %}
       <script src="{% static 'js/project.js' %}"></script>
       <script src="{% static 'js/sideNav.js' %}"></script>
-      <script src="{% static 'js/animatedModal.min.js' %}"></script>
-      <script>
-        $("#demo01").animatedModal();
-      </script>
       {% endcompress %}
 
 

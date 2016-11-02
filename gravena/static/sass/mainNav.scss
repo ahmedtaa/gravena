@@ -3,7 +3,7 @@
   // margin-left: 140px;
   z-index: 1;
   border-radius: 0px;
-  background-color: $glassBG;
+  background-color: $glassBG-dark;
 
   .navbar-brand{
     width: 5em;
@@ -25,6 +25,7 @@
         text-transform: uppercase;
         color: rgba(255, 255, 255, .6);
         transition: color 1s;
+        background-color: transparent;
 
       span{
         display: block;
