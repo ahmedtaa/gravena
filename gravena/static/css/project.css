@@ -119,8 +119,7 @@ body {
     background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-    /* Standard syntax */
-    height: 200px; }
+    /* Standard syntax */ }
 
 .modal-row {
   position: relative;
@@ -135,9 +134,17 @@ body {
   -webkit-transition: background-color 1s;
   /* Safari */ }
 
-.tech-btn:focus, .tech-btn:hover, .tech-btn:visited, .tech-btn:active {
+.btn:focus, .btn:hover, .btn:visited, .btn:active, .btn:active:focus {
   color: white;
-  background-color: rgba(58, 58, 58, 0.3); }
+  background-color: rgba(58, 58, 58, 0.3);
+  outline: none;
+  outline-offset: 0px; }
+
+button:focus, button:hover, button:visited, button:active, button:active:focus {
+  color: white;
+  background-color: rgba(58, 58, 58, 0.3);
+  outline: none;
+  outline-offset: 0px; }
 
 .items-row {
   margin-top: 40px; }
