@@ -5,6 +5,48 @@
 {% block content %}
 
 
+<div class="row items-row borderInspect">
+
+	
+
+    {% for product in products %}
+
+	<div class="col-md-4 item-col borderInspect">
+
+		<button type="button" 
+		        class="item-botton" 
+		        data-toggle="modal" 
+		        data-target="#myModal" >
+
+	        <div class="fill" 
+	        	 style="background-image: url(' {{ product.main_image.url }}' ); 
+	        	        background-size: contain;
+	        	        background-repeat: no-repeat;
+	        	        background-color: black;
+	        	 ">
+	        	
+	        </div>
+
+	        <h5 class="product-description borderInspect">{{ product.description }}</h5>
+
+			<!-- <img src="{{ product.main_image.url }}"
+			     class="img-responsive item-img" > -->
+
+    	<hr />
+			
+    	</button>
+
+
+	</div>
+
+	{% endfor %}
+
+
+
+	
+
+</div>
+
 
 
 {% endblock %}

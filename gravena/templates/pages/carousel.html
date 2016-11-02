@@ -5,14 +5,14 @@
     <div class="carousel-inner">
       {% for product in products %}
         <div class="item {% if forloop.counter0 ==  0 %} active {% endif %}">
-          <!-- Set the first background image using inline CSS below. -->
-            <div class="fill"
+
+            <section class="fill carousel-img"
                   style="background-image:url(' {{ product.main_image.url }} ');
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-clip: padding-box;
                   background-origin: content-box;
-                  background-position: 0px -150px;
+                  /*background-position: 0px -200px;*/
                   /*background-size: contain;*/
                   /*background-repeat: no-repeat;*/
                   ">
@@ -28,27 +28,26 @@
                   </div>
                 </div>
               </section>
-            </div>
+            </section>
 
+            <!-- Bootstrap mpdal -->
             <section class="row borderInspect modal-row">
               <div class="col-md-10">
                 <div class="row borderInspect">
                   <div class="col-md-12 col-md-offset-3 modal-col borderInspect">
-                    <a class="btn btn-default btn-lg borderInspect"
-                       id="demo01"
-                       href="#animatedModal">
-                       Technical Drawing
-                    </a>
-                    <!-- I removed the include from here to solve the z-index
-                    and past the code below in base.html -->
-                    <!-- {#% include 'pages/modal.html' %} -->
+
+                    <button type="button" 
+                            class="btn tech-btn btn-lg" 
+                            data-toggle="modal" 
+                            data-target="#myModal">
+                      Technical Drowings
+                    </button>
+
                   </div>
                 </div>
               </div>
             </section>
-          <!-- <div class="carousel-caption">
-            <h2>Caption 1</h2>
-          </div> -->
+            
         </div>
       {% endfor %}
 

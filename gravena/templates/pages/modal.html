@@ -1,38 +1,42 @@
-<!-- <a class="btn btn-default btn-lg borderInspect"
-   id="demo01"
-   href="#animatedModal">
-   Technical Drawing
-</a>
- -->
 
-<!--DEMO01-->
-<div id="animatedModal">
-    <!--THIS IS IMPORTANT! to close the modal,
-    the class name has to match the name given on the ID
-    class="close-animatedModal" -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="close-animatedModal pull-right">
-          <span>X</span>
-        </div>
-      </div>
-    </div>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="yModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      <!--Your modal content goes here-->
-      <div class="row row-container">
-        <div class="col-md-8 col-md-offset-2 borderInspect">
-          <div class="row borderInspect">
-            <div class="col-md-4 borderInspect">
-              <h2>test</h2>
-            </div>
-            <div class="col-md-4 borderInspect">
-              <h2>test</h2>
-            </div><div class="col-md-4 borderInspect">
-              <h2>test</h2>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">{{ product.name }}</h4>
+      </div>
+
+      {% for product in products %}
+
+      <div class="modal-body">
+        <div class="row row-container">
+          <div class="col-md-8 col-md-offset-2 borderInspect">
+            <div class="row borderInspect">
+              <h2 class="porderInspect">{{ product.name }}</h2>
+
+              {#% for part in product.parts %#}
+
+              <div class="col-md-4 borderInspect">
+                <h2 class="porderInspect">{{ part.description }}</h2>
+                <img src=" {{ part.main_image.url  }} "
+                     class="img-responsive porderInspect">
+
+              </div>
+              {#% endfor %#}
+
             </div>
           </div>
         </div>
       </div>
+      {% endfor %}
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
 </div>

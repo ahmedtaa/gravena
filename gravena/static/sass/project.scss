@@ -10,7 +10,7 @@
   // border: 1px solid cyan;
 }
 body{
-  background-color: #636363 !important;
+  background-color: #404040 !important;
 }
 
 // Alert colors
@@ -54,5 +54,6 @@ $glassBG-dark: rgba(0, 0, 0, .4);
 @import 'mainNav';
 @import 'sideNav';
 @import 'carousel';
+@import 'additional_items';
 
 
