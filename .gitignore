@@ -58,7 +58,7 @@ node_modules/
 
 # User-uploaded media
 gravena/media/
-
+*.sqlite*
 # Hitch directory
 tests/.hitch
 

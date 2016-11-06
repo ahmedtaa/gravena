@@ -40,6 +40,7 @@ THIRD_PARTY_APPS = (
     #'allauth',  # registration
     #'allauth.account',  # registration
     #'allauth.socialaccount',  # registration
+    'imagekit',
 )
 
 # Apps specific for this project go here.
@@ -47,6 +48,7 @@ LOCAL_APPS = (
     # custom users app
     #'gravena.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'products',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -105,8 +107,8 @@ DATABASES = {
     'default' : {
       'ENGINE': 'django.db.backends.sqlite3',
       'NAME': os.path.join(str(ROOT_DIR), 'db.sqlite3'),
-    } 
-    
+    }
+
 }
 
 

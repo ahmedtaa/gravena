@@ -1,3 +1,6 @@
+body {
+  background-color: #404040 !important; }
+
 .alert-debug {
   background-color: #fff;
   border-color: #d6e9c6;
@@ -8,19 +11,156 @@
   border-color: #eed3d7;
   color: #b94a48; }
 
+[hidden][style="display: block;"] {
+  display: block !important; }
+
 .navbar {
+  top: 60px;
+  z-index: 1;
   border-radius: 0px;
-  background-color: red; }
+  background-color: rgba(0, 0, 0, 0.8); }
+  .navbar .navbar-brand {
+    color: white; }
+  .navbar .nav-item .nav-link {
+    height: 5em;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 1s;
+    background-color: transparent; }
+    .navbar .nav-item .nav-link span {
+      display: block;
+      height: 1.5em;
+      font-size: 2.5em; }
+  .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus {
+    color: white; }
 
 @media (max-width: 47.9em) {
   .navbar-nav .nav-item {
     display: inline-block;
     float: none;
     width: 100%; }
+  .nav-link {
+    width: 40px; }
   .navbar-nav .nav-item + .nav-item {
     margin-left: 0; }
   .nav.navbar-nav.pull-xs-right {
     float: none !important; } }
 
-[hidden][style="display: block;"] {
-  display: block !important; }
+.side-nav-translate {
+  transform: translate(-218.75px, 0);
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  /* Safari */ }
+
+#side-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 218.75px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  /* Safari */ }
+  #side-nav .side-nav-container {
+    overflow-y: scroll;
+    width: 187.5px;
+    height: 100%;
+    background-color: transparent; }
+    #side-nav .side-nav-container .side-nav-content {
+      height: inherit; }
+      #side-nav .side-nav-container .side-nav-content .side-nav-item {
+        height: 200px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 10px 0; }
+  #side-nav .side-nav-container::-webkit-scrollbar {
+    display: none; }
+  #side-nav .side-nav-hover {
+    position: absolute;
+    right: -31.25px;
+    top: 200px;
+    width: 31.25px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #e6d2be; }
+  #side-nav .side-nav-item-title {
+    position: relative;
+    bottom: 70px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    width: 100%;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.2); }
+
+.discreption-row {
+  position: relative;
+  top: 250px;
+  color: white; }
+  .discreption-row .discreption-col {
+    background: rgba(0, 0, 0, 0.2);
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    /* Standard syntax */
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.modal-row {
+  position: absolute;
+  bottom: 10%;
+  width: 80%; }
+
+.tech-btn {
+  color: white;
+  background-color: rgba(58, 58, 58, 0.5);
+  border-radius: 0;
+  border: none;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  /* Safari */ }
+
+.btn:focus, .btn:hover, .btn:visited, .btn:active, .btn:active:focus {
+  color: white;
+  background-color: rgba(58, 58, 58, 0.3);
+  outline: none;
+  outline-offset: 0px; }
+
+button:focus, button:hover, button:visited, button:active, button:active:focus {
+  color: white;
+  background-color: rgba(58, 58, 58, 0.3);
+  outline: none;
+  outline-offset: 0px; }
+
+.items-row {
+  margin-top: 40px; }
+  .items-row .item-col {
+    height: 400px;
+    text-align: center;
+    line-height: 700px; }
+    .items-row .item-col .item-botton {
+      background-color: black;
+      width: 300px;
+      height: 300px;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      opacity: .6;
+      -webkit-transition: opacity 1s;
+      /* Safari */
+      transition: opacity 1s; }
+    .items-row .item-col .item-botton:hover {
+      opacity: 1; }
+    .items-row .item-col .product-description {
+      text-align: left;
+      margin-top: 10px;
+      color: white; }
