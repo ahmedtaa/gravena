@@ -1,27 +1,24 @@
-.discreption-row{
+.discreption-row {
   position: relative;
-  top: 250px;
+  top: 150px;
   color: rgb(255, 255, 255);
 
-  .discreption-col{
+  .discreption-col {
     // background-color: rgba(0, 0, 0, .2);
     background: rgba(0, 0, 0, .2); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2)); /* For Safari 5.1 to 6.0 */
     background:      -o-linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2)); /* For Opera 11.1 to 12.0 */
     background:    -moz-linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2)); /* For Firefox 3.6 to 15 */
     background:         linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2)); /* Standard syntax */
-
-    // border-radius: 10px;
-    // height: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
 }
 
-.modal-row{
+.modal-btn-row {
   position: absolute;
-  bottom: 10%;
+  bottom: 100px;
   width: 80%;
 }
 
@@ -33,16 +30,23 @@
   transition: background-color 1s;
   -webkit-transition: background-color 1s; /* Safari */
 }
+
 .btn:focus, .btn:hover, .btn:visited , .btn:active, .btn:active:focus {
-  color: white;
-  background-color: rgba(58, 58, 58, 0.3);
+  color: rgb(255, 255, 255);
+  background-color: rgba(58, 58, 58, 0.8);
   outline: none;
   outline-offset: 0px;
 }
 
-button:focus, button:hover, button:visited , button:active, button:active:focus {
+.number {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
   color: white;
-  background-color: rgba(58, 58, 58, 0.3);
-  outline: none;
-  outline-offset: 0px;
+  background-color: $glassBG-dark;
+
+  p {
+    height: 30px;
+    line-height: 30px;
+  }
 }

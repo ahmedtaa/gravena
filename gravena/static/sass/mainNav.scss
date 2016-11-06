@@ -1,11 +1,16 @@
 .navbar {
-  top: 60px;
+  // top: 60px;
   // margin-left: 140px;
   z-index: 1;
   border-radius: 0px;
   background-color: $glassBG-dark2;
 
-  .navbar-brand{
+  .collabs-botton {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .navbar-brand {
     // width: 5em;
     // height: 5em;
     // line-height: 5em;
@@ -14,13 +19,13 @@
     color: white;
   }
 
-  .nav-item{
+  .nav-item {
     // height: 10em;
     // margin-right: 1em;
 
-      .nav-link{
+      .nav-link {
         // width: 10em;
-        height: 5em;
+        // height: 5em;
         width: 100%;
         // line-height: 5em;
         text-align: center;
@@ -29,7 +34,7 @@
         transition: color 1s;
         background-color: transparent;
 
-      span{
+      span {
         display: block;
         height: 1.5em;
         // line-height: 3em;
@@ -38,7 +43,7 @@
 
     }
 
-    .nav-link:hover, .nav-link:focus{
+    .nav-link:hover, .nav-link:focus, .nav-link:visited {
       color: rgba(255, 255, 255, 1);
     }
 
@@ -54,7 +59,7 @@
     width: 100%;
   }
 
-  .nav-link{
+  .nav-link {
     width: 40px;
   }
 
