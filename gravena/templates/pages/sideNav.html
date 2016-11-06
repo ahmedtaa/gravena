@@ -1,29 +1,11 @@
-
 <nav id="side-nav" class="container borderInspect">
 
   <div class="side-nav-container">
     <div class="side-nav-content borderInspect">
-      <!-- <div class="col-xs-12 side-nav-item borderInspect"
-           data-target="#myCarousel"
-           data-slide-to="0"
-           class="active">
-            <h2>Slide 1</h2>
-      </div> -->
       {% for product in products %}
         <div class="col-xs-12 side-nav-item borderInspect"
              data-target="#myCarousel"
              data-slide-to="{{ forloop.counter0  }}">
-             <!-- <h2>{{ product.main_image_thumbnail.url }}</h2> -->
-
-
-             <!-- <div class=""
-                  style="background-image: url('{{ product.main_image.url }}');
-                  background-color: transparent;
-                  ">
-
-             </div> -->
-
-
              <img src="{{ product.main_image_thumbnail.url }}"
                   alt=""
                   class="img-responsive" />
@@ -31,8 +13,6 @@
               <h5 class="side-nav-item-title">{{ product.name }}</h5>
         </div>
       {% endfor %}
-      <!-- <div class="col-xs-12 side-nav-item borderInspect" data-target="#myCarousel" data-slide-to="9"><h2>Slide 10</h2></div> -->
-      <!-- <div class="col-xs-12 side-nav-item borderInspect" data-target="#myCarousel" data-slide-to="10"><h2>Slide 11</h2></div> -->
     </div>
   </div>
   <div class="side-nav-hover"></div>

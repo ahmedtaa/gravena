@@ -1,42 +1,53 @@
 
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="yModalLabel">
+{% for product in products %}
+<div class="modal fade" id="{{ forloop.counter0 }}" tabindex="-1" role="dialog" aria-labelledby="yModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">{{ product.name }}</h4>
       </div>
-
-      {% for product in products %}
-
       <div class="modal-body">
         <div class="row row-container">
-          <div class="col-md-8 col-md-offset-2 borderInspect">
-            <div class="row borderInspect">
-              <h2 class="porderInspect">{{ product.name }}</h2>
-
-              {#% for part in product.parts %#}
-
+          <div class="col-md-12 borderInspect">
+            {% for part in product.parts.all %}
+            <div class="row borderInspect" style="margin-bottom:20px;">
               <div class="col-md-4 borderInspect">
-                <h2 class="porderInspect">{{ part.description }}</h2>
-                <img src=" {{ part.main_image.url  }} "
-                     class="img-responsive porderInspect">
-
+                <img src=" {{ part.image.url  }} "
+                     class="img-responsive borderInspect">
               </div>
-              {#% endfor %#}
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-12 borderInspect">
+                    <p class="borderInspect">{{ part.description }}</p>
+                  </div>
+                  <div class="col-md-12 borderInspect">
+                    <div class="col-md-12 borderInspect"
+                         style="background-image: url('{{ part.technical_drawing.url  }}');
+                         background-size: contain;
+                         background-repeat: no-repeat;
+                         height: 300px;
+                         background-position: 0 -50px;">
+                      <img src="  "
+                           class="img-responsive borderInspect"
+                           style="/*height:250px;*/">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 
             </div>
+            {% endfor %}
           </div>
         </div>
       </div>
-      {% endfor %}
-
-
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
+
+{% endfor %}

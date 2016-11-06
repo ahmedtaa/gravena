@@ -15,14 +15,15 @@ body {
   display: block !important; }
 
 .navbar {
-  top: 60px;
   z-index: 1;
   border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.8); }
+  .navbar .collabs-botton {
+    color: white;
+    font-size: 1.5em; }
   .navbar .navbar-brand {
     color: white; }
   .navbar .nav-item .nav-link {
-    height: 5em;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -33,7 +34,7 @@ body {
       display: block;
       height: 1.5em;
       font-size: 2.5em; }
-  .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus {
+  .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link:visited {
     color: white; }
 
 @media (max-width: 47.9em) {
@@ -99,7 +100,7 @@ body {
 
 .discreption-row {
   position: relative;
-  top: 250px;
+  top: 150px;
   color: white; }
   .discreption-row .discreption-col {
     background: rgba(0, 0, 0, 0.2);
@@ -115,9 +116,9 @@ body {
     padding-top: 10px;
     padding-bottom: 10px; }
 
-.modal-row {
+.modal-btn-row {
   position: absolute;
-  bottom: 10%;
+  bottom: 100px;
   width: 80%; }
 
 .tech-btn {
@@ -131,15 +132,19 @@ body {
 
 .btn:focus, .btn:hover, .btn:visited, .btn:active, .btn:active:focus {
   color: white;
-  background-color: rgba(58, 58, 58, 0.3);
+  background-color: rgba(58, 58, 58, 0.8);
   outline: none;
   outline-offset: 0px; }
 
-button:focus, button:hover, button:visited, button:active, button:active:focus {
+.number {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
   color: white;
-  background-color: rgba(58, 58, 58, 0.3);
-  outline: none;
-  outline-offset: 0px; }
+  background-color: rgba(0, 0, 0, 0.4); }
+  .number p {
+    height: 30px;
+    line-height: 30px; }
 
 .items-row {
   margin-top: 40px; }
