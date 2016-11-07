@@ -53,12 +53,13 @@ $side-nav-container-width: $side-nav-width - $side-nav-click-width * 2;
 	.side-nav-hover{
 		position: absolute;
 		right: -$side-nav-click-width;
-		top: 100px;
+		top: 150px;
 		width: $side-nav-click-width;
-		height: 50px;
+		// height: 50px;
 		cursor: pointer;
-		background-color: rgb(230, 210, 190);
+		// background-color: rgb(230, 210, 190);
 	}
+
 	.side-nav-item-title{
 		position: relative;
 	    bottom: 70px;
@@ -68,6 +69,117 @@ $side-nav-container-width: $side-nav-width - $side-nav-click-width * 2;
 	    width: 100%;
 	    line-height: 40px;
 	    background-color: $glassBG;
+	}
+
+	// Animations
+	@-webkit-keyframes scroll-ani {
+	  0% {
+	    opacity: 1;
+	    top: 29%;
+	  }
+	  15% {
+	    opacity: 1;
+	    top: 50%;
+	  }
+	  50% {
+	    opacity: 0;
+	    top: 50%;
+	  }
+	  100% {
+	    opacity: 0;
+	    top: 29%;
+	  }
+	}
+
+	@-moz-keyframes scroll-ani {
+	  0% {
+	    opacity: 1;
+	    top: 29%;
+	  }
+	  15% {
+	    opacity: 1;
+	    top: 50%;
+	  }
+	  50% {
+	    opacity: 0;
+	    top: 50%;
+	  }
+	  100% {
+	    opacity: 0;
+	    top: 29%;
+	  }
+	}
+
+	@keyframes scroll-ani {
+	  0% {
+	    opacity: 1;
+	    top: 29%;
+	  }
+	  15% {
+	    opacity: 1;
+	    top: 50%;
+	  }
+	  50% {
+	    opacity: 0;
+	    top: 50%;
+	  }
+	  100% {
+	    opacity: 0;
+	    top: 29%;
+	  }
+	}
+
+	// Mouse & Message Styles
+
+	// The Scroll Link
+	.mouse-scroll {
+	  display: inline-block;
+	  // line-height: 18px;
+	  // font-size: 13px;
+	  // font-weight: normal;
+	  color: #7F8C8D;
+	  color: #FFF;
+	  // font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  // letter-spacing: 2px;
+	  margin-top: 10%;
+	  margin-left: 10px;
+	  text-decoration: none;
+	  overflow: hidden;
+	  -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari */
+    transform: rotate(270deg);
+	  
+	  // The Mouse
+	  .mouse {
+	    position: relative;
+	    display: block;
+	    width: 35px;
+	    height: 50px;
+	    margin-left: 20px; 
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    border: 1px solid #FFF;
+	    border-radius: 23px;
+	    
+	    // Scroll Indicator
+	    .mouse-movement { 
+	      position: absolute;
+	      display: block;
+	      top: 29%;
+	      left: 50%;
+	      width: 8px;
+	      height: 8px;
+	      margin: -4px 0 0 -4px;
+	      background: #FFF;
+	      border-radius: 50%;
+	      -webkit-animation: scroll-ani 4s linear infinite;
+	      -moz-animation: scroll-ani 4s linear infinite;
+	      animation: scroll-ani 4s linear infinite;
+	    }
+	    
+	  }
+
 	}
 
 }
