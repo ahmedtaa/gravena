@@ -83,7 +83,7 @@ body {
   #side-nav .side-nav-hover {
     position: absolute;
     right: -31.25px;
-    top: 200px;
+    top: 100px;
     width: 31.25px;
     height: 50px;
     cursor: pointer;
@@ -150,8 +150,7 @@ body {
   margin-top: 40px; }
   .items-row .item-col {
     height: 400px;
-    text-align: center;
-    line-height: 700px; }
+    text-align: center; }
     .items-row .item-col .item-botton {
       background-color: black;
       width: 300px;
@@ -168,4 +167,6 @@ body {
     .items-row .item-col .product-description {
       text-align: left;
       margin-top: 10px;
+      height: 50px;
+      line-height: 1.4em;
       color: white; }

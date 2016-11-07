@@ -8,11 +8,11 @@
         <div class="item {% if forloop.counter0 ==  0 %} active {% endif %}">
             <section class="fill carousel-img"
                   style="background-image:url(' {{ product.main_image.url }} ');
-                  background-size: cover;
+                  background-size: contain;
                   background-repeat: no-repeat;
                   background-clip: content-box;
                   background-origin: content-box;
-                  background-position: 0px -150px;
+                  /*background-position: 0px -150px;*/
                   /*background-size: contain;*/
                   /*background-repeat: no-repeat;*/
                   ">
@@ -46,7 +46,7 @@
               <div class="row number">
                 <div class="col-md-12">
                   <p>
-                    Model number {{ forloop.counter }} of {{ products|length }}
+                    {{ product.name }} {{ forloop.counter }} of {{ products|length }}
                   </p>
                 </div>
               </div>

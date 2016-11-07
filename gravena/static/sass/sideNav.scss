@@ -53,7 +53,7 @@ $side-nav-container-width: $side-nav-width - $side-nav-click-width * 2;
 	.side-nav-hover{
 		position: absolute;
 		right: -$side-nav-click-width;
-		top: 200px;
+		top: 100px;
 		width: $side-nav-click-width;
 		height: 50px;
 		cursor: pointer;
