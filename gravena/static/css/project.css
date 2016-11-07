@@ -90,7 +90,7 @@ body {
   #side-nav .side-nav-hover {
     position: absolute;
     right: -31.25px;
-    top: 150px;
+    top: 120px;
     width: 31.25px;
     cursor: pointer; }
   #side-nav .side-nav-item-title {
