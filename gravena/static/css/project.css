@@ -44,12 +44,20 @@ body {
     .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link:visited {
       color: white; }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .navbar .navbar-brand img {
-    width: 120px; }
+    width: 120px;
+    margin-top: 0; }
   .navbar .nav-item {
     width: 22%;
-    font-size: .8em; } }
+    font-size: .8em; }
+  .navbar-nav .nav-item {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid white; } }
 
 @media (max-width: 480px) {
   .navbar .navbar-brand {

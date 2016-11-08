@@ -54,7 +54,10 @@
 
 }
 
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 780px) {
 
   .navbar{
 
@@ -62,6 +65,7 @@
 
       img {
         width: 120px;
+        margin-top: 0;
       }
 
   }
@@ -72,8 +76,20 @@
     }
 
   }
+
+  .navbar-nav .nav-item {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid white;
+  }
   
 }
+
+
+
 
 @media (max-width: 480px) {
 
