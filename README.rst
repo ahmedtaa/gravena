@@ -117,7 +117,7 @@ git an ssh with deployer@gravena-eg.com::
 
     $ git checkout gravena/static
 
-    $ git pull --rebase origin master
+    $ git pull origin master
 
     $ grunt build
 
