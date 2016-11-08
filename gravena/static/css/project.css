@@ -39,8 +39,6 @@ body {
       .navbar .nav-item .nav-link .glyph svg {
         width: 4em;
         height: 4em; }
-      .navbar .nav-item .nav-link .glyph:hover {
-        background-color: rgba(150, 150, 150, 0.47); }
     .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link:visited {
       color: white; }
 
