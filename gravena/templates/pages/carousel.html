@@ -7,11 +7,15 @@
       {% for product in products %}
         <div class="item {% if forloop.counter0 ==  0 %} active {% endif %}">
             <section class="fill carousel-img"
-                  style="background-image:url(' {{ product.main_image.url }} ');
+                  style="background: url(' {{ product.main_image.url }} ') no-repeat center center fixed;
+                  -webkit-background-size: contain;
+                  -moz-background-size: contain;
+                  -o-background-size: contain;
                   background-size: contain;
+                  /*background-size: contain;
                   background-repeat: no-repeat;
                   background-clip: content-box;
-                  background-origin: content-box;
+                  background-origin: content-box;*/
                   /*background-position: 0px -150px;*/
                   /*background-size: contain;*/
                   /*background-repeat: no-repeat;*/
