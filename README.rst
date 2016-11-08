@@ -111,11 +111,15 @@ Moved to `Live reloading and SASS compilation`_.
 Deployment
 ----------
 
-$ git checkout gravena/static
-$ git pull --rebase origin master
-$ grunt build
-$ python manage.py collectstatic
-$ supervisorctl restart gravina
+    $ git checkout gravena/static
+
+    $ git pull --rebase origin master
+
+    $ grunt build
+
+    $ python manage.py collectstatic
+
+    $ supervisorctl restart gravina
 
 
 
