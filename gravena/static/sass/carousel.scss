@@ -46,7 +46,8 @@
   background-color: $glassBG-dark;
 
   p {
-    height: 30px;
-    line-height: 30px;
+    line-height: 1em;
+    font-size: 1em;
+    padding-top: .5em;
   }
 }

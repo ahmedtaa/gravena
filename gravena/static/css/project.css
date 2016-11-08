@@ -111,7 +111,7 @@ body {
   #side-nav .side-nav-hover {
     position: absolute;
     right: -31.25px;
-    top: 120px;
+    top: 110px;
     width: 31.25px;
     cursor: pointer; }
   #side-nav .side-nav-item-title {
@@ -203,6 +203,14 @@ body {
         -moz-animation: scroll-ani 4s linear infinite;
         animation: scroll-ani 4s linear infinite; }
 
+@media (max-width: 768px) {
+  .modal-btn-row {
+    bottom: 40px !important; }
+  .side-nav-hover {
+    top: 70px !important; }
+  .carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-chevron-left {
+    top: 70%; } }
+
 .discreption-row {
   position: relative;
   top: 150px;
@@ -248,8 +256,9 @@ body {
   color: white;
   background-color: rgba(0, 0, 0, 0.4); }
   .number p {
-    height: 30px;
-    line-height: 30px; }
+    line-height: 1em;
+    font-size: 1em;
+    padding-top: .5em; }
 
 .items-row {
   margin-top: 40px; }
