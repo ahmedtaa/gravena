@@ -123,7 +123,7 @@ git an ssh with deployer@gravena-eg.com::
 
     $ python manage.py collectstatic
 
-    $ supervisorctl restart gravina
+    $ supervisorctl restart gravena
 
 
 
