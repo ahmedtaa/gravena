@@ -113,6 +113,8 @@ Deployment
 
 git an ssh with deployer@gravena-eg.com::
 
+    $ source ../gravena-env/bin/activate
+
     $ git checkout gravena/static
 
     $ git pull --rebase origin master
